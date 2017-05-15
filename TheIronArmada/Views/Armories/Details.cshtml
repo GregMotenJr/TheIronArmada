@@ -1,0 +1,128 @@
+﻿@model TheIronArmada.Models.Armory
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div>
+    <div>
+        <h1 class="text-center borderTitles">@Html.DisplayFor(model => model.Name)</h1>
+        <img src="@Url.Content(Model.Photo)" alt="insert pic" style="width:100%">
+    </div>
+
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt style="font-size:30px">
+            @Html.DisplayNameFor(model => model.Color)
+        </dt>
+
+        <dd style="font-size:30px">
+            @Html.DisplayFor(model => model.Color)
+        </dd>
+        <dt style="font-size:30px">
+            Season
+        </dt>
+
+        <dd style="font-size:30px">
+            @Html.DisplayFor(model => model.Season.Name)
+        </dd>
+        <dt style="font-size:30px">
+            Occasion
+        </dt>
+
+        <dd style="font-size:30px">
+            @Html.DisplayFor(model => model.Occasion.Name)
+        </dd>
+        
+
+    </dl>
+</div>
+
+<p style="font-size:30px">
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ArmoryID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+
+@*<div>
+    <h4>Armory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Color)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Color)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Photo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Photo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Accessory.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accessory.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bottom.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bottom.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Occasion.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Occasion.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Season.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Season.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sho.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sho.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Top.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Top.Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    
+</p>*@
