@@ -12,17 +12,17 @@
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span class="icon-bar navColor"></span>
+                    <span class="icon-bar navColor"></span>
+                    <span class="icon-bar navColor"></span>
                 </button>
-                @Html.ActionLink("Stark Industries", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+               <div class="navColor"> @Html.ActionLink("Stark Industries", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Construct New Model", "Create", "Armories")</li>
-                    <li>@Html.ActionLink("View The Armada", "Index", "Armories")</li>
+            <div class="navbar-collapse navColor collapse">
+                <ul class="nav navColor navbar-nav navbar-right">
+                    <li class="navColor">@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li class="navColor">@Html.ActionLink("Construct New Model", "Create", "Armories")</li>
+                    <li class="navColor">@Html.ActionLink("View The Armada", "Index", "Armories")</li>
                 </ul>
             </div>
         </div>
