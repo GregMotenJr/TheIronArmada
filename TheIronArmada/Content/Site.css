@@ -4,6 +4,9 @@
     background-color:black;
     color:white;
 }
+.navColor{
+    color:red;
+}
  .redBorder{
      border:3px solid red;
  }
